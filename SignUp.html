@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SignUp</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Styles.css"> <!-- Legarea fișierului CSS extern -->
+</head>
+<body class="SignUp">
+
+<form onsubmit="return validateForm()">
+    <label for="name">Name:</label><br>
+    <input type="text" id="name" name="name" placeholder="Your name"><br>
+    <span id="username-error-message-SignUp" class="error-message"></span><br> <!-- Mesaj de eroare pentru validarea numelui de utilizator -->
+
+    <label for="password">Password:</label><br>
+    <input type="password" id="password" name="password" placeholder="Your password"><br>
+    <span id="password-error-message-SignUp" class="error-message"></span><br> <!-- Indicator vizual pentru validarea parolei -->
+
+    <label for="confirmPassword">Confirm Password:</label><br>
+    <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm your password"><br>
+    <span id="confirm-password-error-message-SignUp" class="error-message"></span><br> <!-- Indicator vizual pentru validarea confirmării parolei -->
+
+    <label for="userType">User Type:</label><br>
+    <select id="userType" name="userType">
+        <option value="client">Client</option>
+        <option value="mechanic">Mechanic</option>
+    </select><br>
+    <span id="user-type-valid-indicator-SignUp"></span><br> <!-- Indicator vizual pentru validarea tipului de utilizator -->
+
+    <!-- Containerul pentru mesajul de eroare -->
+    <div id="error-message-container" class="error-message-container">
+        <span id="error-message" class="error-message"></span>
+        <button id="close-error-button" class="close-error-button">
+    </div>
+
+    <button type="submit" title="Click here to submit your form">Sign Up</button>
+    <p>You have an account? <a href="SignIn.html">Sign In</a></p>
+
+    <!-- <button type="submit">Submit</button> -->
+</form>
+
+<script src="Script.js"></script> <!-- Legarea fișierului JavaScript extern -->
+
+</body>
+</html>
