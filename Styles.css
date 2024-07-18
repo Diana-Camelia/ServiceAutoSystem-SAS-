@@ -1,0 +1,221 @@
+/* Proiect.html: */
+
+
+        body.FirstPage {
+            background-image: url('Imagini/BackgroundPrincipal.jpg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 100px; /* Distanta de la marginea de jos a header-ului */
+            color: white;
+            text-shadow: 2px 2px 5px rgb(172, 30, 77); /* Adaugă umbra roz */
+        }
+
+        h1 {
+            margin-top: 0; /* Elimină margin-top implicit */
+            font-size: 50px; /* Mărimea titlului */
+            font-family: Arial, sans-serif; /* Fontul butonului */
+            text-align: center; /* Alinierea textului în mijloc */
+        }
+
+        h2 {
+            color: white; /* Culoare text alb */
+            text-shadow: 2px 2px 5px rgb(172, 30, 77); /* Adaugă umbra roz */
+            font-size: 30px; /* Mărimea textului */
+            font-family: Arial, sans-serif; /* Fontul butonului */
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: center; /* Aliniază butoanele în mijloc */
+        }
+
+        .buttons button {
+            /*background: linear-gradient(to bottom, #ffffff, #494949); /* Gradient 3D */
+            background-color: white; /* Culoare de fundal a butonului */
+            color: rgb(130, 24, 59); /* Culoare text a butonului */
+            padding: 10px 20px; /* Spațiu între text și marginile butonului */
+            font-size: 25px; /* Mărimea textului butonului */
+            font-weight: bold; /* Scrisul mai gros */
+            border: none; /* Elimină bordura butonului */
+            cursor: pointer; /* Transformă cursorul într-o mână la trecerea peste buton */
+            border-radius: 13px; /* Buton rotunjit */
+            box-shadow: 2px 2px 2px 4px rgb(172, 30, 77); /* Umbră roz */
+            font-family: Arial, sans-serif; /* Fontul butonului */
+
+            margin: 0 30px; /* Spațiu între butoane */
+            width: 140px; /* Dimensiunea butoanelor */
+        }
+
+        .buttons button:hover {
+            background-color: grey; /* Schimbă culoarea de fundal a butonului la trecerea peste el */
+        }
+
+        footer {
+            position: fixed; /* Poziționează footer-ul fix în partea de jos a paginii */
+            bottom: 0; /* Aliniere la partea de jos a paginii */
+            width: 100%; /* Lățimea footer-ului să fie 100% din lățimea paginii */
+            /*background-color: black; /* Culorează background-ul footer-ului */
+            color: white; /* Setează culoarea textului la alb */
+            text-align: center; /* Aliniază textul la mijloc */
+            padding: 10px 0; /* Adaugă un padding de 10px sus și jos pentru spațiere */
+        }        
+
+/*----------------------------------------------------------------------------------------------------------------------------------------*/
+/* SignIn.html: */
+
+
+        body.SignIn {
+            background-image: url('Imagini/SignIn.jpg');
+            font-family: Arial, sans-serif; /* Fontul textului */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-size: cover; /* Redimensionează imaginea pentru a acoperi întreaga suprafață */
+            background-position: center; /* Centrează imaginea pe axele X și Y */
+        }
+
+
+        form {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: rgb(172, 30, 77);
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        button[type="submit"]:hover {
+            background-color: grey; /* Schimbă culoarea de fundal la trecerea cursorului peste buton */
+        }
+
+/*----------------------------------------------------------------------------------------------------------------------------------------*/
+/* SignUp.html: */
+
+        body.SignUp {
+            background-image: url('Imagini/SignUp.jpg'); /* Adaugă imaginea de fundal */
+            font-family: Arial, sans-serif; /* Fontul textului */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-size: cover; /* Redimensionează imaginea pentru a acoperi întreaga suprafață */
+            background-position: center; /* Centrează imaginea pe axele X și Y */
+        }
+
+        form {
+            background-color: white;
+            padding: 30px; /* Mărește spațiul de padding */
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 400px; /* Setează lățimea formularului */
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 12px; /* Mărește spațiul de padding */
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-size: 16px; /* Mărește dimensiunea textului */
+        }
+
+        select {
+            width: 100%;
+            padding: 12px; /* Mărește spațiul de padding */
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-size: 16px; /* Mărește dimensiunea textului */
+        }
+
+        button {
+            background-color: rgb(172, 30, 77);
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 16px; /* Mărește dimensiunea textului */
+        }
+
+        button[type="submit"]:hover {
+            background-color: grey; /* Schimbă culoarea de fundal la trecerea cursorului peste buton */
+        }
+
+        /* Căsuța cu mesajul de eroare  */
+        .error-message-container {
+            position: absolute;
+            background-color: rgb(245, 27, 19);
+            color: white;
+            padding: 10px;
+            width: auto; /* Lățimea automată */
+            max-width: 1000px; /* Lățimea maximă a containerului */
+            text-align: center; /* Alinierea textului la centru */
+            box-sizing: border-box; /* Include padding-ul în calculul dimensiunii totale */
+            top: calc(88% + 10px); /* Plasează caseta sub butonul de sign up */
+            left: 50%; /* Centrare orizontală */
+            transform: translateX(-50%); /* Centrare orizontală */
+            margin-left: 0; /* Elimină margin-left-ul */
+            display: none; /* Inițial ascunsă */
+        }
+        
+        
+        .error-message-container.show-error {
+            display: block; /* Afisată când are clasa .show-error */
+        }
+        
+        .close-error-button {
+            position: absolute;
+            top: 5px;
+            right: 10px;
+            border: none;
+            background-color: transparent;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    
